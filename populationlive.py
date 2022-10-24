@@ -1,9 +1,10 @@
 import numpy as np
 import pickle
-import string as st
+import streamlit as st
 
 # Load the saved model
-loaded_model = pickle.load(open('populationtrained_model.sav', 'rb'))
+loaded_model = pickle.load(open('prediction = classifier.predict
+print(prediction)', 'rb'))
 
 # Create a function for Prediction
 def population_prediction(input_data):
@@ -31,7 +32,7 @@ def main():
     Area = st.text_input('Total population')
     Density = st.text_input('Pre Total population')
     GrowthRate = st.text_input('Population value')
-    Rank = st.text_input(' Total value')
+    Rank = st.text_input('Total value')
 
     
     # Code for Prediction
