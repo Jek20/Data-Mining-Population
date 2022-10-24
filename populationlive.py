@@ -1,6 +1,6 @@
 import numpy as np
 import pickle
-import streamlit as st
+import string as st
 
 # Load the saved model
 loaded_model = pickle.load(open('praktikum/trained_model.sav', 'rb'))
