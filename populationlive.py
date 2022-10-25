@@ -38,7 +38,7 @@ def main():
     
     # Create a button for Prediction
     if st.button('Population Test Result'):
-        Live = population_prediction([Area, Density, GrowthRate, Rank, Population])
+        Live = prediction([Area, Density, GrowthRate, Rank, Population])
    
     st.success(Live)
     
