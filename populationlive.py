@@ -18,9 +18,9 @@ def population_prediction(input_data):
     print(prediction)
 
     if (prediction[0] == 0):
-      return 'The person is not population'
+      return 'The person is not Population'
     else:
-      return 'The person is population'
+      return 'The person is Population'
   
 def main():
     
@@ -38,8 +38,8 @@ def main():
     
     # Create a button for Prediction
     if st.button('Population Test Result'):
-        Live = population_prediction([Area, Density, GrowthRate, Rank])
-        print(Population)
+        Live = population_prediction([Area, Density, GrowthRate, Rank, Population])
+   
     st.success(Live)
     
 if __name__ == '__main__':
