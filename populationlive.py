@@ -34,13 +34,14 @@ def main():
     Rank = st.text_input('Total value')
 
     # Code for Prediction
-    Population = ''
+    Live = ''
     
     # Create a button for Prediction
     
     if st.button('Population Test Result'):
         Live = population_prediction([Population, Area, Density, GrowthRate, Rank])
         
-    success()
+    success(Live)
     
 if __name__ == '__main__':
+    main()
