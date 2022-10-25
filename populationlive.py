@@ -33,7 +33,6 @@ def main():
     GrowthRate = st.text_input('Population value')
     Rank = st.text_input('Total value')
 
-    
     # Code for Prediction
     Population = ''
     
@@ -42,7 +41,7 @@ def main():
     if st.button('Population Test Result'):
         Live = population_prediction([Population, Area, Density, GrowthRate, Rank])
         
-    st.success()
+    success()
     
 if __name__ == '__main__':
-    main()
+    st.main()
