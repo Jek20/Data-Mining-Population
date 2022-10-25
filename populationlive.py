@@ -28,19 +28,18 @@ def main():
     st.title('Population Prediction Website App')
     
     # To get the input data from the user
-    Area = st.text_input('Total population')
-    Density = st.text_input('Pre Total population')
-    GrowthRate = st.text_input('Population value')
-    Rank = st.text_input('Total value')
+    Area = st.text_input('Total Population')
+    Density = st.text_input('Pre Total Population')
+    GrowthRate = st.text_input('Population Value')
+    Rank = st.text_input('Total Value')
 
     # Code for Prediction
     Live = ''
     
     # Create a button for Prediction
-    
     if st.button('Population Test Result'):
         Live = population_prediction([Area, Density, GrowthRate, Rank])
-        
+        print(Population)
     st.success(Live)
     
 if __name__ == '__main__':
