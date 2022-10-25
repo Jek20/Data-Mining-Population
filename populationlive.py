@@ -40,7 +40,7 @@ def main():
     if st.button('Population Test Result'):
         Live = population_prediction(Area, Density, GrowthRate, Rank, Population)
    
-    for success(Live)
+    if st.success(Live)
     
 if __name__ == '__main__':
     main()
