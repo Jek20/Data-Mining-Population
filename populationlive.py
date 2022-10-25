@@ -45,4 +45,4 @@ def main():
     st.success()
     
 if __name__ == '__main__':
-    def main()
+    main()
