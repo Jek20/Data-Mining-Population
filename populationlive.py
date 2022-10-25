@@ -14,7 +14,7 @@ def population_prediction(input_data):
     # Reshape the array as we are predicting for one instance
     input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
     
-    prediction = loaded_model.predict(input_data_reshaped)
+    prediction = loaded_model.index(input_data_reshaped)
     print(prediction)
 
     if (prediction[0] == 0):
