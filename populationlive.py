@@ -6,7 +6,7 @@ import streamlit as st
 loaded_model = pickle.load(open('trained_model.sav', 'rb'))
 
 # Create a function for Prediction
-def population_prediction(input_data):
+def population_index(input_data):
 
     # Change the input_data to numpy array
     input_data_as_numpy_array = np.asarray(input_data)
@@ -38,7 +38,7 @@ def main():
     
     # Create a button for Prediction
     if st.button('Population Test Result'):
-        Live = population_prediction(Area, Density, GrowthRate, Rank, Population)
+        Live = population_index(Area, Density, GrowthRate, Rank, Population)
    
     st.success(Live)
     
